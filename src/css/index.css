@@ -1,0 +1,85 @@
+:root {
+  --font: "Roboto", sans-serif;
+  --bgcolor: rgb(26, 26, 26);
+  --txt-color: white;
+  --font-size: 22px;
+  --butbg-color: rgb(187, 115, 255);
+  --grad-color: #1e5799, #2ce0bf, #76dd2c, #dba62b, #e02cbf, #84099c;
+  --blur: blur(0.2px);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html body {
+  font-family: var(--font);
+  font-size: var(--font-size);
+  font-weight: 500;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bgcolor);
+  color: var(--txt-color);
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+button {
+  border: none;
+  padding: 7px 11px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--txt-color);
+  background-image: linear-gradient(to left, var(--grad-color));
+  background-size: 550px;
+  -webkit-animation: anime 17s linear infinite;
+          animation: anime 17s linear infinite;
+  background-repeat: no-repeat;
+  z-index: 1;
+  filter: var(--blur);
+}
+
+@-webkit-keyframes anime {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes anime {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.circle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  z-index: -1;
+  filter: var(--blur);
+}/*# sourceMappingURL=index.css.map */

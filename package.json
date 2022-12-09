@@ -1,0 +1,21 @@
+{
+  "name": "animejscircle",
+  "version": "1.0.0",
+  "description": "circles animations with animejs",
+  "main": "index.js",
+  "scripts": {
+    "dev": ""
+  },
+  "keywords": [
+    "animejs",
+    "js",
+    "html",
+    "css",
+    "sass"
+  ],
+  "author": "fxhxyz <fxhxyz@porton.me>",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.56.2"
+  }
+}
